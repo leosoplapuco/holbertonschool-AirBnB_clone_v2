@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+
+"""   adding the route /python/ with render   """
+
 from flask import Flask
 
 app = Flask(__name__)
@@ -23,11 +26,11 @@ def c_route(text):
     return "C {}".format(text.replace("_", " "))
 
 
-@app.route('/python/')
 @app.route('/python/<text>')
 def python_route(text="is cool"):
     """ return Python , followed by the value of the text variable """
     return "Python {}".format(text.replace("_", " "))
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000, host='0.0.0.0')
