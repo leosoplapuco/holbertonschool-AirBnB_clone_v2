@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-from flask import Flask
 
 """   setting up my first server with flask   """
+
+from flask import Flask
 
 app = Flask(__name__)
 
