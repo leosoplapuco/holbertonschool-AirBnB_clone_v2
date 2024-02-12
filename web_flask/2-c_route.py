@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 from flask import Flask
 
+"""   adding the route c/text   """
+
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 
@@ -21,6 +23,7 @@ def hbnb_route():
 def c_route(text):
     """ return c followed by the value of the text variable """
     return "C {}".format(text.replace("_", " "))
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000, host='0.0.0.0')

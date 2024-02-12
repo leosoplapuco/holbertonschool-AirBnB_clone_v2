@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""   Adding route hbnb   """
+
 from flask import Flask
 app = Flask(__name__)
 
