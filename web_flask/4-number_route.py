@@ -34,7 +34,7 @@ def number(n):
     try:
         n = int(n)
         return "{} is a number".format(n)
-    except notFound:
+    except number:
         abort(404)
 
 
