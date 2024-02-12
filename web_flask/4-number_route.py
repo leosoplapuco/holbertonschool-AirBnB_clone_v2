@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+
+"""   adding a route returning a number   """
+
 from flask import Flask, abort
 app = Flask(__name__)
 
