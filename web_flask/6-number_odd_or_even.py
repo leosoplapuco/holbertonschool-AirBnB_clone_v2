@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+
+"""   render with templates   """
+
 from flask import Flask, render_template
 app = Flask(__name__)
 
