@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 from flask import Flask
 
+"""   setting up my first server with flask   """
+
 app = Flask(__name__)
 
 @app.route("/")
