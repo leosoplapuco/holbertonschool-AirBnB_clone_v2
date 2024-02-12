@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+
+"""   render with templates   """
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -40,6 +43,7 @@ def number_route(n):
 def number_template(n):
     """display a HTML page"""
     return render_template('5-number.html', number=n)
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000, host='0.0.0.0')
